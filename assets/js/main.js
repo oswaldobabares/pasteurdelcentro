@@ -3,10 +3,10 @@
 
 jQuery(document).ready(function ($) {
 
-	$(window).load(function () {
-		$(".loaded").fadeOut();
-		$(".preloader").delay(1000).fadeOut("slow");
-	});
+    $(window).load(function () {
+        $(".loaded").fadeOut();
+        $(".preloader").delay(1000).fadeOut("slow");
+    });
 
     /*---------------------------------------------*
      * Mobile menu
@@ -57,17 +57,17 @@ jQuery(document).ready(function ($) {
         }
 
     });
-	
-	/*---------------------------------------------*
+
+    /*---------------------------------------------*
      * Gallery Pop Up Animation
      ---------------------------------------------*/
 
-    $('.gallery-img').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+//    $('.gallery-img').magnificPopup({
+//       type: 'image',
+//       gallery: {
+//           enabled: true
+//        }
+//    });
 
     /*---------------------------------------------*
      * Youtube Media
