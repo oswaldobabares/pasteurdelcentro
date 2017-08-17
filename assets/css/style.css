@@ -517,7 +517,6 @@ textarea::-ms-input-placeholder
 }
 .home-content{
     color: #222;
-    margin-top: 280px;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -552,16 +551,21 @@ textarea::-ms-input-placeholder
 .features-content{
     margin-bottom:30px;
 }
+
+.features-content a {
+    text-decoration: none;
+    color: #565656;
+}
+
+.features-content:hover {
+    box-shadow: 8px 8px 40px #888888;
+}
+
 .features-content i {
     height: 150px;
     width: 150px;
     border-radius: 100%;
     margin-bottom: 20px;
-    transition:.5s;
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
     position: relative;
 }
 
@@ -575,11 +579,6 @@ textarea::-ms-input-placeholder
     font-size:15px;
     text-transform:uppercase;
     font-weight:600;
-    transition:.5s;
-    -webkit-transition:.5s;
-    -moz-transition:.5s;
-    -ms-transition:.5s;
-    -o-transition:.5s;
 }
 
 /*For Gallery Section*/
