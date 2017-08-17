@@ -37,28 +37,6 @@ jQuery(document).ready(function ($) {
     });
 
     /*---------------------------------------------*
-     * Google Map Area
-     ---------------------------------------------*/
-
-    var map = new GMaps({
-        el: '#map',
-        lat: 23.535726,
-        lng: 90.713344,
-        scrollwheel: false
-    });
-
-
-    map.addMarker({
-        lat: 23.535726,
-        lng: 90.713344,
-        title: 'Lima',
-        infoWindow: {
-            content: '<p>Daudkandi Bazar, Comilla</p>'
-        }
-
-    });
-
-    /*---------------------------------------------*
      * Gallery Pop Up Animation
      ---------------------------------------------*/
 
@@ -73,6 +51,7 @@ jQuery(document).ready(function ($) {
      * Youtube Media
      ---------------------------------------------*/
     $('.youtube-media').magnificPopup({type: 'iframe'});
+
 
     /*---------------------------------------------*
      * Scroll Up
@@ -97,8 +76,6 @@ jQuery(document).ready(function ($) {
      ---------------------------------------------*/
 
     $.localScroll();
-
-
 
     /*---------------------------------------------*
      * Counter 
@@ -126,16 +103,14 @@ jQuery(document).ready(function ($) {
      Carousel
      ---------------------------------------------------------------------= */
 
-//    $('.testimonials').owlCarousel({
-//        responsiveClass: true,
-//        autoplay: false,
-//        items: 1,
-//        loop: true,
-//        dots: true,
-//        autoplayHoverPause: true
-//
-//    });
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoPlay: true,
+        autoPlayTimeout: 1000,
+        autoplayHoverPause: true
+    });
 
-
-    //End
 });

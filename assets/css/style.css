@@ -503,11 +503,10 @@ textarea::-ms-input-placeholder
     border-top: 3px solid #4bcaff;
 }
 
-
 /*For Home Section*/
 
 .home{
-    background: url(../images/water.png) no-repeat top;
+    background: url(../images/Clean-Water.jpg) no-repeat top;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -546,22 +545,6 @@ textarea::-ms-input-placeholder
     font-size:18px;
     font-family: 'latolight';
     font-weight:normal;
-}
-.home-content .available p a i {
-    font-size: 25px;
-    background: #191c21;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    text-align: center;
-    padding-top: 13px;
-    color: #4bcaff;
-    margin: 0 10px;
-    transition:.3s;
-}
-
-.home-content .available p a i:hover {
-    color: #fff;
 }
 
 /*For Features Section*/
@@ -696,104 +679,15 @@ textarea::-ms-input-placeholder
     font-size: 20px;
 }
 
-/* For Price Section */
-
-.price-category{
-    font-family: 'latobold';
-    background:#f9f9f9;
-    color:#d7d7d7;
-    padding:20px 0;
-    border:1px solid #cdcaca;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    margin-bottom:30px;
-    -ms-border-radius:5px;
-    box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
-    -webkit-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
-    -moz-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
-    -ms-box-shadow:1px 1px 1px 0 rgba(55,50,40, .10);
-}
-.price-category h4{
-    text-transform:uppercase;
-}
-.price-category h2{
-    font-size: 85px;
-    background: #91c46b;
-    padding: 50px;
-    color: #fff;
-    font-family: 'latobold';
-}
-.price-category ul li{
-    font-size:18px;
-    line-height:35px;
-}
-.price-category a{
-    border: 0;
-    padding: 16px 50px;
-    background: #91c46b;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 20px;
-    border-radius: 3px;
-    font-size: 15px;
-    display:inline-block;
-    transition:.5s;
-}
-.price-category  a:hover{
-    background:#333;
-    color:#fff;
-}
-
-
-.price-category.basic{
-    margin-left:50px;
-}
-
-
-.price-category.professional{
-    color:#4bcaff;
-}
-.price-category.professional h4{
-    font-size:22px;
-}
-.price-category.professional h2{
-    background:#4bcaff;
-}
-.price-category.professional a{
-    background:#4bcaff;
-    transition:.5s;
-}
-.price-category.professional a:hover{
-    background:#333;
-}
-
-.price-category.advance{
-    margin-right:50px;
-}
-.price-category.advance h2{
-    background:#fd7c00;
-}
-.price-category.advance a{
-    background:#fd7c00;
-    transition:.5s;
-}
-.price-category.advance a:hover{
-    background:#333;
-}
-
 /* For Testimonial Section*/
 
 .testimonial-photo {
     text-align: right;
-    background: url(../images/testimonial.png) no-repeat right top;
     width:100%;
-    height:175px;
 
 }
 .testimonial-photo img {
-    height: 120px;
-    width: 120px;
+    height: 280px;
     border: 5px solid #fff;
     border-radius: 100%;
     background: #fff;
@@ -811,50 +705,70 @@ textarea::-ms-input-placeholder
 }
 .item p{
     text-align:left;
+    font-size: 18px
 }
 .item h6{
     text-align:right;
     font-family: 'latolight_italic';
-    font-size:14px;
+    font-size:18px;
+}
+
+.item a{
+    text-decoration: none;
+    color:#4bcaff;
+    font-weight: bold
 }
 
 .carousel-indicators {
     bottom: -70px;
     left: 325px;
 }
-.carousel-indicators li {
+.owl-theme .owl-controls .owl-page span {
     display: inline-block;
     width: 50px;
     height: 7px;
-    background-color:none;
     background-color:#c1eafb;
     border:0;
     border-radius:0;
 }
 
-.carousel-indicators .active {
-    width: 50px;
-    height: 8px;
-    background-color: #4bcaff;
-    border: 0;
-}
-
-
-/* For Download Section*/
-.download-content{
-    padding:50px;
-    display:block;
-    overflow:hidden;
-}
-.download-content h1{
+/* For instaFeedImage Section*/
+.download h1{
     font-family: 'latobold';
-    font-size:55px;
+    font-size:50px;
     margin-bottom:20px;
-}
-.download-content button{
-    margin-top:35px;
+    text-align: justify
 }
 
+.download h1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px
+}
+
+#instafeed img {
+    margin: 5px;
+    width: 270px;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+}
+
+#instafeed img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/* contact Section */
+
+#Conocenos h3{
+    text-align: justify;
+}
+
+#Conocenos h5 {
+    text-align: justify;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
 /* For Contact Section*/
 #map{
 
