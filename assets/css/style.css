@@ -506,7 +506,7 @@ textarea::-ms-input-placeholder
 /*For Home Section*/
 
 .home{
-    background: url(../images/Clean-Water.jpg) no-repeat top;
+    background: url(../images/fondo.png) no-repeat top;
     background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -515,30 +515,43 @@ textarea::-ms-input-placeholder
     width: 100%;
     overflow: hidden;
 }
+
+.glass {
+    background: url(../images/vaso.png) no-repeat top;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    min-height: 910px;
+    width: 50%;
+    overflow: hidden;
+    background-position-x: -100px;
+}
+
 .home-content{
-    color: #222;
+    color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
 }
 .home-content h1{
-    font-size:40px;
+    font-size:60px;
     font-family: 'latolight';
-    text-shadow: 2px 2px #fff;
+    text-align: center
 }
 .home-content h1 span{
     font-family: 'latobold';
-    color:#222;
+    color:#fff;
 }
 .home-content p{
     margin:30px 0;
 }
 
 .home_text_header {
-    text-shadow: 2px 2px #fff;
-    font-size: 17px;
+    font-size: 20px;
 }
 .available{
     margin-top:50px;
+    text-align: end;
 }
 .available p{
     font-size:18px;
@@ -793,29 +806,20 @@ textarea::-ms-input-placeholder
     -o-background-size: cover;
     width: 100%;
 }
-.video-content{
-    color:#fff;
-    margin-top: 60px;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
 }
-.video-content i{
-    border: 2px solid white;
-    font-size: 35px;
-    padding: 15px 40px;
-    color: #fff;
-    border-radius: 5px;
-}
-.video-content h1{
-    font-size:40px;
-    font-family: 'latolight';
-    margin-top:25px;
-}
-.video-content h1 span{
-    font-family: 'latobold';
-    color:#fff;
-}
-.video-content p{
-    margin:30px 0;
-    font-size: 20px;
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* For Testimonial Section*/
@@ -985,3 +989,13 @@ textarea::-ms-input-placeholder
     color: #fff;
     transform:scale(1.1);
 }	
+
+/*Media query WIDTH*/
+@media (max-width: 992px){
+    .glass {
+        display: none;
+    }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -90px !important;
+    }
+}

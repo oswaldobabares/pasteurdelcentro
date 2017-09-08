@@ -49,9 +49,8 @@ jQuery(document).ready(function ($) {
 
     /*---------------------------------------------*
      * Youtube Media
-     ---------------------------------------------*/
-    $('.youtube-media').magnificPopup({type: 'iframe'});
-
+     ---------------------------------------------
+     $('.youtube-media').magnificPopup({type: 'iframe'});*/
 
     /*---------------------------------------------*
      * Scroll Up
@@ -77,13 +76,13 @@ jQuery(document).ready(function ($) {
 
     $.localScroll();
 
-    	/* ========================================================================= */
-	/*	Portfolio Filtering Hook
-	/* =========================================================================  */
+    /* ========================================================================= */
+    /*	Portfolio Filtering Hook
+     /* =========================================================================  */
 
-	$('#og-grid').mixItUp(); // Portfolio filter
+    $('#og-grid').mixItUp(); // Portfolio filter
 
-	Grid.init(); //Portfolio Grid Expand
+    Grid.init(); //Portfolio Grid Expand
     /*---------------------------------------------*
      * Counter 
      ---------------------------------------------*/
