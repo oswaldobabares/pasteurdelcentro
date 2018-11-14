@@ -7,7 +7,6 @@ jQuery(document).ready(function ($) {
         $(".loaded").fadeOut();
         $(".preloader").delay(1000).fadeOut("slow");
     });
-
     /*---------------------------------------------*
      * Mobile menu
      ---------------------------------------------*/
@@ -26,7 +25,6 @@ jQuery(document).ready(function ($) {
             }
         }
     });
-
     /*---------------------------------------------*
      * Menu
      ---------------------------------------------*/
@@ -37,16 +35,13 @@ jQuery(document).ready(function ($) {
             $('.navbar').css("position","initial");
         }
     });
-
     /*---------------------------------------------*
      * Scroll Total Navbar
      ---------------------------------------------*/
-
     $('body').scrollspy({
         target: '.navbar',
         offset: 160
     });
-
     /*---------------------------------------------*
      * Scroll Up
      ---------------------------------------------*/
@@ -59,18 +54,16 @@ jQuery(document).ready(function ($) {
             $('.scrollup').css("display","none");
         }
     });
-
     $('.scrollup').click(function () {
         $("html, body").animate({scrollTop: 0}, 1000);
         return false;
     });
-
     /*---------------------------------------------*
      * parallax 
      ---------------------------------------------*/
 
     function parallaxInit() {
-        $('#instagram').parallax("50%", 0.3);
+        $('#instagram').parallax("50%", 0.4);
     }
 
     $(window).bind("load", function () {
