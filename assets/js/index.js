@@ -5,24 +5,17 @@ var controller;
 var model;
 
 function init() {
-    console.log("((Init))");
-
     model = new Model();
     controller = new Controller();
     view = new View();
-    
 }
 
-function View() {
-    console.log("((View))");
-    
+function View() {    
 	controller.instafeed();
 	controller.resizeInstagram();	
-        
 }
 
 function Controller() {
-    console.log("((Controller))");
     
 	this.instafeed = function() {
 
@@ -35,8 +28,6 @@ function Controller() {
             template: '<a class="animation" href="{{link}}" target="_blank"><img id="instagramImg" class="instaFeedImage" src="{{image}}"" /></a>'
         });
         userFeed.run();
-
-
     };
 
     this.resizeInstagram = function () {
@@ -45,6 +36,5 @@ function Controller() {
 }
 
 function Model() {
-    console.log("((Model))");
 
 }

@@ -28,6 +28,17 @@ jQuery(document).ready(function ($) {
     });
 
     /*---------------------------------------------*
+     * Menu
+     ---------------------------------------------*/
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 540) {
+            $('.navbar').css("position","fixed");
+        } else {
+            $('.navbar').css("position","initial");
+        }
+    });
+
+    /*---------------------------------------------*
      * Scroll Total Navbar
      ---------------------------------------------*/
 
@@ -37,29 +48,15 @@ jQuery(document).ready(function ($) {
     });
 
     /*---------------------------------------------*
-     * Gallery Pop Up Animation
-     ---------------------------------------------*/
-
-//    $('.gallery-img').magnificPopup({
-//       type: 'image',
-//       gallery: {
-//           enabled: true
-//        }
-//    });
-
-    /*---------------------------------------------*
-     * Youtube Media
-     ---------------------------------------------
-     $('.youtube-media').magnificPopup({type: 'iframe'});*/
-
-    /*---------------------------------------------*
      * Scroll Up
      ---------------------------------------------*/
     $(window).scroll(function () {
         if ($(this).scrollTop() > 600) {
             $('.scrollup').fadeIn('slow');
+            $('.scrollup').css("display","block");
         } else {
             $('.scrollup').fadeOut('slow');
+            $('.scrollup').css("display","none");
         }
     });
 
@@ -68,55 +65,15 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
-
-
     /*---------------------------------------------*
-     * STICKY scroll
+     * parallax 
      ---------------------------------------------*/
 
-    $.localScroll();
+    function parallaxInit() {
+        $('#instagram').parallax("50%", 0.3);
+    }
 
-    /* ========================================================================= */
-    /*	Portfolio Filtering Hook
-     /* =========================================================================  */
-
-    $('#og-grid').mixItUp(); // Portfolio filter
-
-    Grid.init(); //Portfolio Grid Expand
-    /*---------------------------------------------*
-     * Counter 
-     ---------------------------------------------*/
-
-//    $('.statistic-counter').counterUp({
-//        delay: 10,
-//        time: 2000
-//    });
-
-
-
-
-    /*---------------------------------------------*
-     * WOW
-     ---------------------------------------------*/
-
-//        var wow = new WOW({
-//            mobile: false // trigger animations on mobile devices (default is true)
-//        });
-//        wow.init();
-
-
-    /* ---------------------------------------------------------------------
-     Carousel
-     ---------------------------------------------------------------------= */
-
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoPlay: true,
-        autoPlayTimeout: 1000,
-        autoplayHoverPause: true
+    $(window).bind("load", function () {
+        parallaxInit()
     });
-
 });
